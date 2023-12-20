@@ -54,10 +54,6 @@ export function publish(context: TseiContext) {
     replaceJsonInFile(path.join(destDir, 'package.json'), (pkgJson: any) => {
       pkgJson.version = buildDetail.tsVersion;
       delete pkgJson.private;
-      pkgJson.exports = {
-        "ts-expose-internals": "./typescript.d.ts",
-        default: "./empty.d.ts"
-      }
     });
 
     /* Publish */

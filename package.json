@@ -25,9 +25,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git@github.com:nonara/ts-expose-internals.git"
+    "url": "git@github.com:andrewbranch/ts-expose-internals-conditionally.git"
   },
   "files": [
+    "empty.d.ts",
     "index.d.ts",
     "README.md",
     "typescript.d.ts"

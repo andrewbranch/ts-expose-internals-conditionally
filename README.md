@@ -1,5 +1,3 @@
-[![License](https://img.shields.io/npm/l/ts-expose-internals)](https://opensource.org/licenses/MIT)
-
 # ⚠️ Do not use this unless you understand the risks ⚠️
 
 You’re probably better off using [ts-expose-internals](https://github.com/nonara/ts-expose-internals) directly.

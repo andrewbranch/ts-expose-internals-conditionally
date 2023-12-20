@@ -1,19 +1,30 @@
 {
-  "name": "ts-expose-internals",
+  "name": "ts-expose-internals-conditionally",
   "private": true,
-  "description": "Augment the TypeScript compiler module's types to expose hidden internal types",
+  "description": "Augment the TypeScript compiler module's types to expose hidden internal types when tsconfig.json contains \"ts-expose-internals\" in `customConditions`.",
   "version": "4.5.0-beta",
   "license": "MIT",
-  "types": "index.d.ts",
-  "author": {
-    "name": "Ron Spickenagel",
-    "url": "https://twitter.com/ron"
+  "author": "Andrew Branch <andrew@wheream.io>",
+  "exports": {
+    "ts-expose-internals": "./index.d.ts",
+    "default": "./empty.d.ts"
   },
+  "contributors": [
+    {
+      "name": "Ron Spickenagel",
+      "url": "https://twitter.com/ron"
+    },
+    {
+      "name": "Andrew Branch",
+      "email": "andrew@wheream.io"
+    }
+  ],
   "repository": {
     "type": "git",
-    "url": "git@github.com:nonara/ts-expose-internals.git"
+    "url": "git@github.com:andrewbranch/ts-expose-internals-conditionally.git"
   },
   "files": [
+    "empty.d.ts",
     "index.d.ts",
     "README.md",
     "typescript.d.ts"

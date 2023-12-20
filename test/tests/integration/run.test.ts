@@ -133,6 +133,15 @@ describe(`End-to-end Run`, () => {
     });
   });
 
+  test(`Empty declaration file is correct`, () => {
+    processableTags.forEach(tag => {
+      const fixedTag = fixupVersionTag(tag);
+      const ver = fixedTag.slice(1);
+      const emptyFilecontent = fs.readFileSync(path.join(tmpDir, 'dist', ver, 'empty.d.ts'), 'utf8');
+      expect(emptyFilecontent).toBe('');
+    });
+  })
+
   test(`package.json is correct`, () => {
     const basePkgJson = JSON.parse(fs.readFileSync(path.join(repoRootPath, 'package-files/package.json'), 'utf8'));
     processableTags.forEach(tag => {
@@ -140,6 +149,10 @@ describe(`End-to-end Run`, () => {
       const ver = fixedTag.slice(1);
       const expectedPkgJson = {
         ...basePkgJson,
+        exports: {
+          "ts-expose-internals": "./typescript.d.ts",
+          default: "./empty.d.ts"
+        },
         version: ver
       };
       delete expectedPkgJson.private;

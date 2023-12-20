@@ -45,14 +45,19 @@ export function publish(context: TseiContext) {
     fs.readdirSync(srcDir).forEach(f => fs.copyFileSync(path.join(srcDir, f), path.join(destDir, f)));
     fs.copyFileSync(path.join(context.repoRootDir, 'README.md'), path.join(destDir, 'README.md'));
 
-    /* Write d.ts file */
+    /* Write d.ts files */
     console.log(`[${versionTag}] Writing declarations & package...`);
     fs.writeFileSync(path.join(destDir, 'typescript.d.ts'), dtsContent);
+    fs.writeFileSync(path.join(destDir, 'empty.d.ts'), '');
 
     /* Fixup package.json */
     replaceJsonInFile(path.join(destDir, 'package.json'), (pkgJson: any) => {
       pkgJson.version = buildDetail.tsVersion;
       delete pkgJson.private;
+      pkgJson.exports = {
+        "ts-expose-internals": "./typescript.d.ts",
+        default: "./empty.d.ts"
+      }
     });
 
     /* Publish */

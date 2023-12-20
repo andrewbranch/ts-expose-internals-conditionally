@@ -5,5 +5,110 @@
     "tsRepoUrl": "https://github.com/microsoft/TypeScript.git",
     "skipTags": []
   },
-  "buildDetails": []
+  "buildDetails": [
+    {
+      "tag": "v5.0.2",
+      "tsVersion": "5.0.2",
+      "attempts": 1,
+      "complete": true,
+      "lastAttempt": 1703114210806
+    },
+    {
+      "tag": "v5.0.3",
+      "tsVersion": "5.0.3",
+      "attempts": 1,
+      "complete": true,
+      "lastAttempt": 1703114247167
+    },
+    {
+      "tag": "v5.0.4",
+      "tsVersion": "5.0.4",
+      "attempts": 1,
+      "complete": true,
+      "lastAttempt": 1703114293903
+    },
+    {
+      "tag": "v5.1-beta",
+      "tsVersion": "5.1.0-beta",
+      "attempts": 1,
+      "complete": true,
+      "lastAttempt": 1703114344029
+    },
+    {
+      "tag": "v5.1-rc",
+      "tsVersion": "5.1.1-rc",
+      "attempts": 1,
+      "complete": true,
+      "lastAttempt": 1703114392622
+    },
+    {
+      "tag": "v5.1.3",
+      "tsVersion": "5.1.3",
+      "attempts": 1,
+      "complete": true,
+      "lastAttempt": 1703114443473
+    },
+    {
+      "tag": "v5.1.5",
+      "tsVersion": "5.1.5",
+      "attempts": 1,
+      "complete": true,
+      "lastAttempt": 1703114494626
+    },
+    {
+      "tag": "v5.1.6",
+      "tsVersion": "5.1.6",
+      "attempts": 1,
+      "complete": true,
+      "lastAttempt": 1703114542162
+    },
+    {
+      "tag": "v5.2-beta",
+      "tsVersion": "5.2.0-beta",
+      "attempts": 1,
+      "complete": true,
+      "lastAttempt": 1703114587631
+    },
+    {
+      "tag": "v5.2-rc",
+      "tsVersion": "5.2.1-rc",
+      "attempts": 1,
+      "complete": true,
+      "lastAttempt": 1703114637565
+    },
+    {
+      "tag": "v5.2.2",
+      "tsVersion": "5.2.2",
+      "attempts": 1,
+      "complete": true,
+      "lastAttempt": 1703114687269
+    },
+    {
+      "tag": "v5.3-beta",
+      "attempts": 1,
+      "complete": false,
+      "lastAttempt": 1703114737736
+    },
+    {
+      "tag": "v5.3-rc",
+      "tsVersion": "5.3.1-rc",
+      "attempts": 1,
+      "complete": true,
+      "lastAttempt": 1703114785224
+    },
+    {
+      "tag": "v5.3.2",
+      "tsVersion": "5.3.2",
+      "attempts": 1,
+      "complete": true,
+      "lastAttempt": 1703114836246
+    },
+    {
+      "tag": "v5.3.3",
+      "tsVersion": "5.3.3",
+      "attempts": 1,
+      "complete": true,
+      "lastAttempt": 1703114889690
+    }
+  ]
 }

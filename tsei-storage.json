@@ -3,7 +3,7 @@
     "tsVersion": ">=5.0.0",
     "maxAttempts": 7,
     "tsRepoUrl": "https://github.com/microsoft/TypeScript.git",
-    "skipTags": []
+    "skipTags": ["v5.3-beta"]
   },
   "buildDetails": [
     {
@@ -82,12 +82,6 @@
       "attempts": 1,
       "complete": true,
       "lastAttempt": 1703114687269
-    },
-    {
-      "tag": "v5.3-beta",
-      "attempts": 1,
-      "complete": false,
-      "lastAttempt": 1703114737736
     },
     {
       "tag": "v5.3-rc",

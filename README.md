@@ -57,6 +57,26 @@ To be safe, you should re-check your output declaration files _without_ any `cus
 
 Since `tsc --declaration` will emit a reference to `"ts-expose-internals-conditionally"` in your declaration files, you need to ensure that reference actually resolves (to an empty file) for your users, which means they will need this package installed, which means it should go in your `dependencies`, not your `devDependencies`.
 
+## Reducing package weight for users
+
+Version `1.0.0-empty.0` of this package contains only an empty declaration file and this README. If you use pnpm, you can install a working version of this package for yourself locally, but depend on the empty version for your users:
+
+```json
+{
+  "dependencies": {
+    "ts-expose-internals-conditionally": "1.0.0-empty.0",
+    "typescript": "5.3.3"
+  },
+  "pnpm": {
+    "overrides": {
+      "ts-expose-internals-conditionally": "$typescript"
+    }
+  }
+}
+```
+
+There is probably an equivalent way to do this with other package managers.
+
 ## Why is this a fork and not an intermediate dependency?
 
 I thought I would get away with making a package with two tiny files:
